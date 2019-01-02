@@ -50,7 +50,7 @@
                 android:id="@+id/id"
                 android:layout_width="280dp"
                 android:layout_height="wrap_content"
-                android:hint="학번"
+                android:hint="Student Number"
                 android:layout_gravity="center"
                 android:padding="10dp"
                 android:textColor="#ffffff"
@@ -59,7 +59,7 @@
                 android:background="@color/colorPrimary"
                 />
             <EditText
-                android:id="@+id/password"
+                android:id="@+id/login_password"
                 android:inputType="textPassword"
                 android:layout_width="280dp"
                 android:layout_height="wrap_content"
@@ -73,6 +73,7 @@
                 />
 
             <Button
+                android:id="@+id/LoginButton"
                 android:layout_width="280dp"
                 android:layout_height="wrap_content"
                 android:textSize="20dp"
