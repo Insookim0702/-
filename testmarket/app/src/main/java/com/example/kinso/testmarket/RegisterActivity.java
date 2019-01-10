@@ -210,6 +210,7 @@ public class RegisterActivity extends AppCompatActivity{
                             }
                         }
                     }; //Response.Listener 완료.
+
                     //Volley 라이브러리를 써서 실제 서버와 통신을 구현하는 부분
                     //파라미터 입력하는 순서대로 데이터베이스에 저장된다.
                     RegisterRequest registerRequest = new RegisterRequest(stdnum, name, userGender, userMajor, userphone, userPassword, responseListener);

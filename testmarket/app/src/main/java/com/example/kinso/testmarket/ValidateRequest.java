@@ -14,7 +14,7 @@ import java.util.Map;
  * 해당 클래스도 아래 URL에 POST방식으로 파라미터들을 전송한다. 여기서는 학번이 이미 가입된 학번인지 검증한다.
  */
 public class ValidateRequest  extends StringRequest{
-    final static private String URL = "http://192.168.0.131:80/HTphp/UserValidate.php";
+    final static private String URL = "http://10.93.196.199:80/HTphp/UserValidate.php";
     private Map<String, String> parameters;
 
     public ValidateRequest(String stdnum, Response.Listener<String> listener){

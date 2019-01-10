@@ -14,7 +14,7 @@ import java.util.Map;
 public class RegisterRequest extends StringRequest {
     //해당클래스는 URL에 POST방식으로 파라미터들을 전송하는 역할을 수행.
     //회원가입정보를 PHP서버에 보내서 데이터베이스에 저장
-    final static private String URL ="http://192.168.0.10:80/HTphp/UserRegister.php";
+    final static private String URL ="http://10.93.196.199:80/HTphp/UserRegister.php";
     private Map<String, String> parameters;
 
     public RegisterRequest(String stdnum, String userName, String userGender,

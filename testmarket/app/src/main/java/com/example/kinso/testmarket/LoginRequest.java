@@ -14,7 +14,7 @@ import java.util.Map;
  */
 
 public class LoginRequest  extends StringRequest{
-    final static private String URL = "http://192.168.0.10:80/HTphp/UserLogin.php";
+    final static private String URL = "http://10.93.196.199:80/HTphp/UserLogin.php";
     private Map<String, String> parameters;
     public LoginRequest(String stdnum, String userPassword, Response.Listener<String> listener){
         super(Method.POST, URL, listener, null); // 해당 URL에 POST방식으로 파라미터들을 전송한다.
