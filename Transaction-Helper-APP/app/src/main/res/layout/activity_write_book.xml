@@ -1,0 +1,388 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/CategoryText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#080808"
+            android:textSize="50px"
+            ></TextView>
+        <LinearLayout
+            android:id="@+id/barcode_layout"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp"
+            >
+            <Button
+                android:id="@+id/barcode_btn"
+                android:layout_width="300dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:text="책 바코드 인식하기" />
+            <LinearLayout
+                android:id="@+id/Layout_BookInfo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:visibility="gone"
+                android:orientation="vertical"
+                >
+                <TextView
+                    android:id="@+id/bookname"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#000000"
+                    android:textSize="42px"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/bookImage"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp" />
+
+                <TextView
+                    android:id="@+id/bookauthor"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/bookpublisher"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/bookprice"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/Camera_Layout"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="판매할 물건 사진을 최대 3장 올려주세요."
+                android:textSize="30px" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/cambtn"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/camcon" />
+
+                <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="120dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="120dp"
+                        android:layout_gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/camview"
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:layout_gravity="center_vertical"
+
+                            />
+
+                        <ImageView
+                            android:id="@+id/camview1"
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:layout_gravity="center_vertical"
+                            />
+
+                        <ImageView
+                            android:id="@+id/camview2"
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:layout_gravity="center_vertical" />
+                    </LinearLayout>
+
+                </HorizontalScrollView>
+
+            </LinearLayout>
+            <Button
+                android:text="다음"
+                android:id="@+id/Btn_Open_User_Info_Layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/User_Info_Layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:padding="10dp"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="180px"
+                android:orientation="horizontal"
+                android:padding="10dp"
+                >
+                <TextView
+                    android:id="@+id/write_no_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="40px"
+                    android:layout_weight="0.5"
+                    android:layout_gravity="bottom"
+                    />
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="150px"
+                    android:layout_weight="0.5"
+                    android:orientation="vertical">
+                    <TextView
+                        android:id="@+id/user_nick_text"
+                        android:textSize="40px"
+                        android:layout_width="match_parent"
+                        android:layout_height="50px"
+                        android:gravity="right"
+                        />
+                    <TextView
+                        android:id="@+id/write_date_text"
+                        android:textSize="40px"
+                        android:layout_width="match_parent"
+                        android:layout_height="50px"
+                        android:gravity="right"
+                        />
+                </LinearLayout>
+            </LinearLayout>
+            <EditText
+                android:id="@+id/Edt_Subject"
+                android:hint="책이 사용되는 수업을 남겨주세요."
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <EditText
+                android:id="@+id/Edt_user_description"
+                android:inputType="textMultiLine|textNoSuggestions"
+                android:background="@drawable/border"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:cursorVisible="true"
+                android:layout_margin="12dp"
+                android:hint="제품에 대한 추가 정보를 남겨주세요."
+                />
+            <Button
+                android:id="@+id/Btn_Open_BookStatus_Layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="다음"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/BookStatus_Layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:padding="10dp"
+            android:orientation="vertical">
+
+            <TextView
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="책 상태"
+                android:textColor="#000000"
+                android:textSize="33px" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="밑줄 흔적" />
+
+            <RadioGroup
+                android:id="@+id/line_rg"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:orientation="vertical">
+
+                <RadioButton
+                    android:id="@+id/line_never_rbt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="없음" />
+
+                <RadioButton
+                    android:id="@+id/line_pencil_sharpe_rbt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:text="연필/샤프" />
+
+                <RadioButton
+                    android:id="@+id/line_bolpen_highlighter_rbt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="볼펜/형광펜" />
+            </RadioGroup>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="필기 흔적" />
+
+            <RadioGroup
+                android:id="@+id/note_rg"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:orientation="vertical">
+
+                <RadioButton
+                    android:id="@+id/note_never_rbt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="없음"
+
+                    />
+
+                <RadioButton
+                    android:id="@+id/note_pencil_sharpe_rbt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:text="연필/샤프" />
+
+                <RadioButton
+                    android:id="@+id/note_bolpen_highlighter_rbt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="볼펜/형광펜" />
+            </RadioGroup>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="겉표지" />
+
+            <RadioGroup
+                android:id="@+id/cover_rg"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/cover_notclear_rbt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:text="깨끗하지 않음" />
+
+                <RadioButton
+                    android:id="@+id/cover_clear_rbt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="깨끗함" />
+
+            </RadioGroup>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="이름 학번 주기" />
+
+            <RadioGroup
+                android:id="@+id/write_rg"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/write_rbt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:text="있음"
+
+                    />
+
+                <RadioButton
+                    android:id="@+id/notwrite_rbt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="없음" />
+
+            </RadioGroup>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="페이지 훼손" />
+
+            <RadioGroup
+                android:id="@+id/page_rg"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/page_notclear_rbt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:text="있음" />
+
+                <RadioButton
+                    android:id="@+id/page_clear_rbt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="없음" />
+            </RadioGroup>
+            <Button
+                android:id="@+id/Btn_BookSubmit"
+                android:layout_width="700px"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="등록하기"
+                />
+        </LinearLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="관련 없는 글을 게시할 경우 해당 스마트폰을 통한 앱 접속이 불가능 할 수 있습니다."/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="거래방법은 학교에서 직거래입니다."/>
+</LinearLayout>
+</ScrollView>
