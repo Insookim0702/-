@@ -19,9 +19,7 @@ import java.util.ArrayList;
 public class MainActivity extends AppCompatActivity{
     RecyclerView mRecyclerView;
     RecyclerView.LayoutManager mLayoutManager;
-    private Animation fab_open, fab_close;
-    private Boolean isFabOpen = false;
-    private FloatingActionButton fab, fab2, barcode_fab;
+    private FloatingActionButton fab;
 
     //이 자바파일이 사용되면 가장 먼저 실행되는 부분은 onCreate부분이다.
     //이는 이 java파일 자체를 메모리에 올려서 객체화 시키는 부분이라고 생각하면 된다.
@@ -34,15 +32,13 @@ public class MainActivity extends AppCompatActivity{
 
         mRecyclerView = findViewById(R.id.recycler_view);
         mRecyclerView.setHasFixedSize(true);
-        mLayoutManager = new LinearLayoutManager(this);// 리스트를 일렬로 배치시킨다.
+        //mLayoutManager = new LinearLayoutManager(this);// 리스트를 일렬로 배치시킨다.
 
         //지정된 레이아웃 메니저를 RecyclerView에 set 해준다.
-        mRecyclerView.setLayoutManager(mLayoutManager);
+        //mRecyclerView.setLayoutManager(mLayoutManager);
         ArrayList<ItemInfo> ItemInfoArrayList = new ArrayList<>();
         ItemInfoArrayList.add(new ItemInfo(R.drawable.bread, "500원"));
         ItemInfoArrayList.add(new ItemInfo(R.drawable.compu, "800,000원"));
-        ItemInfoArrayList.add(new ItemInfo(R.drawable.hack, "3600원"));
-        ItemInfoArrayList.add(new ItemInfo(R.drawable.iot, "4000원"));
         MyAdapter myAdapter = new MyAdapter(ItemInfoArrayList);
         mRecyclerView.setAdapter(myAdapter);
 

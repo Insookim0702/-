@@ -65,7 +65,6 @@ public class RegisterActivity extends AppCompatActivity{
         });
 
         final EditText phone = (EditText)findViewById(R.id.phone);
-        Spinner userMajor = (Spinner) findViewById(R.id.major);
         final EditText pw = (EditText)findViewById(R.id.pw);
         final EditText ch_pww = (EditText)findViewById(R.id.ch_pw);
 
@@ -129,6 +128,7 @@ public class RegisterActivity extends AppCompatActivity{
                             }
                         }
                     };//Response.Listener 완료
+
                     //Volley 라이브러리를 이용해서 실제 서버와 통신을 구현하는 부분
                     ValidateRequest validateRequest = new ValidateRequest(stdnum, responseListener);
                     RequestQueue queue = Volley.newRequestQueue(RegisterActivity.this);
@@ -147,9 +147,8 @@ public class RegisterActivity extends AppCompatActivity{
                 String userMajor = spinner.getSelectedItem().toString();
                 String userphone =  phone.getText().toString();
                 String name = userName.getText().toString();
+
                 AlertDialog.Builder builder = new AlertDialog.Builder(RegisterActivity.this);
-
-
                 // 정규표현식 사용자 이름 한글 검증.
                 String HanglePattern = "^[가-힣]*$"; //^ : 문자열의 시작, $ : 문자열의 종료
                 boolean HangleMatch = Pattern.matches(HanglePattern,name);
@@ -187,7 +186,6 @@ public class RegisterActivity extends AppCompatActivity{
                 else {
                     //회원가입 시작
                     Response.Listener<String> responseListener = new Response.Listener<String>() {
-
                         @Override
                         public void onResponse(String response) {
                             try {

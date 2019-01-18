@@ -26,7 +26,6 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center_vertical"
             android:textSize="20sp"
-            tools:text="5000원"
             />
 
     </LinearLayout>

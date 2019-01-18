@@ -42,7 +42,7 @@ public class MyAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
     //필수로 만들어져야 하는 메소드2 : ListView의 getView부분을 담당하는 메소드
     @Override
     public void onBindViewHolder(RecyclerView.ViewHolder holder, int position){
-        MyViewHolder myViewHolder= (MyViewHolder) holder;
+        MyViewHolder myViewHolder= (MyViewHolder)holder;
         myViewHolder.ivPicture.setImageResource(ItemInfoArrayList.get(position).drawableId);
         myViewHolder.tvPrice.setText(ItemInfoArrayList.get(position).price);
     }

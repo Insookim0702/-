@@ -5,13 +5,17 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="com.example.kinso.testmarket.MainActivity">
+    tools:context="com.example.kinso.testmarket.MainActivity"
+    >
 
     <android.support.v7.widget.RecyclerView
+        app:layoutManager="LinearLayoutManager"
         android:id="@+id/recycler_view"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="#dddddd" />
+        android:background="#dddddd"
+        />
+
     //FrameLayout으로 하면 RecyclerView와 FloatingActionButton을 함께 사용할 수 있다.
     <android.support.design.widget.FloatingActionButton
         android:id="@+id/fab"

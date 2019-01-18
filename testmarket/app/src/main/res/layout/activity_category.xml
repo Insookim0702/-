@@ -3,6 +3,7 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:padding="10dp"
     android:orientation="vertical">
 
 
@@ -34,7 +35,7 @@
                 android:layout_height="70px"
                 android:gravity="center_vertical"
                 android:textSize="50px"
-                android:text="도서/티켓/음반"/>
+                android:text="도서"/>
             <TextView
                 android:id="@+id/digital"
                 android:layout_width="match_parent"
@@ -60,7 +61,7 @@
                 android:gravity="center_vertical"
                 android:textSize="50px"
 
-                android:text="기타 중고물품"/>
+                android:text="기타 물품"/>
 
 
         </LinearLayout>
@@ -122,7 +123,7 @@
             android:layout_height="wrap_content"
             android:orientation="vertical">
             <TextView
-                android:id="@+id/empty"
+                android:id="@+id/bang_empty"
                 android:layout_width="match_parent"
                 android:layout_height="80px"
                 android:gravity="center_vertical"
@@ -168,19 +169,13 @@
                 android:layout_height="80px"
                 android:gravity="center_vertical"
                 android:textSize="50px"
-
                 android:text="꿀팁소개"/>
         </LinearLayout>
     </LinearLayout>
-
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_gravity="center"
         android:gravity="bottom"
         android:text="광고 카테고리 글을 중고 카테고리에 올리면 게시물 삭제 및 이용정지 등의 제재를 받을 수 있습니다." />
-
-
-
-
-
 </LinearLayout>
