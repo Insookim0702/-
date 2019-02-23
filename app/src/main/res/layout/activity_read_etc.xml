@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    >
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="9"
+        android:orientation="vertical"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:orientation="vertical">
+        <TextView
+            android:id="@+id/Tx_writenum"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/Tx_date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/Tx_userid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:src="#9f9d9d"
+            />
+
+        <TextView
+            android:id="@+id/Tx_category"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="43px"/>
+        <TextView
+            android:id="@+id/Tx_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textSize="66px"
+            android:textColor="#0a0909"/>
+
+        <TextView
+            android:id="@+id/Tx_price"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="50px"
+            android:textColor="#ff8ee7"
+            android:textStyle="bold"/>
+        <TextView
+            android:id="@+id/Tx_status"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/Tx_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:id="@+id/Iv_image1"
+            android:layout_width="240dp"
+            android:layout_height="280dp"
+            android:scaleType="fitXY"
+            android:layout_gravity="center"
+            android:paddingBottom="10dp"
+            android:visibility="gone"
+            />
+        <ImageView
+            android:id="@+id/Iv_image2"
+            android:layout_width="240dp"
+            android:layout_height="280dp"
+            android:scaleType="fitXY"
+            android:layout_gravity="center"
+            android:visibility="gone"
+            android:paddingBottom="10dp"
+            />
+        <ImageView
+            android:id="@+id/Iv_image3"
+            android:layout_width="240dp"
+            android:layout_height="280dp"
+            android:scaleType="fitXY"
+            android:layout_gravity="center"
+            android:paddingBottom="10dp"
+            android:visibility="gone"
+            />
+        </LinearLayout>
+    </ScrollView>
+
+    <Button
+        android:text="등록 완료 확인"
+        android:id="@+id/fix"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#ffffff"
+        android:textSize="40px"
+        android:textStyle="bold"
+        android:background="#70c2af"
+        />
+    <Button
+        android:text="쪽지 보내기"
+        android:id="@+id/SendMessage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#ffffff"
+        android:textSize="40px"
+        android:textStyle="bold"
+        android:background="#70c2af"
+        android:visibility="gone"
+        />
+        <LinearLayout
+            android:id="@+id/Layout_DelOrModi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:visibility="gone"
+            >
+
+            <Button
+                android:text="삭제하기"
+                android:id="@+id/Btn_Delete"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:background="#70c2af"
+                android:textColor="#ffffff"
+                android:textStyle="bold"
+                />
+            <Button
+                android:text="수정하기"
+                android:id="@+id/Btn_Modify"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:background="#70c2af"
+                android:textColor="#ffffff"
+                android:textStyle="bold"
+                />
+        </LinearLayout>
+</LinearLayout>

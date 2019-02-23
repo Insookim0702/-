@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.kinso.testmarket">
+
+    <!-- "${applicationId}.provider" -->
+    <uses-feature android:name="android.hardware.camera" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!-- 찍힌 사진을 외장 메모리에 저장하기 위해서 외장 USB에 쓰기권한을 요청한다. -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <permission android:name="android.permission.CAMERA" />
+    <permission android:name="android.permission.FLASHLIGHT" />
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_NUMBERS" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <!-- wifi 상태 체크권한 -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <!-- network 상태 체크 권한 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <!-- 폰의 상태 체크 권한 -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/market_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:roundIcon="@mipmap/market_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <uses-library
+            android:name="org.apache.http.legacy"
+            android:required="false" />
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyAvPA_3w37BS54DKmA3kqqOYL655KNhTbE" />
+        <activity android:name=".ActivitySplash" android:theme="@android:style/Theme.NoTitleBar.Fullscreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        //zxing을 세로로 출력하기 위해
+        <activity
+            android:name=".captureActivityVerticalOrientation"
+            android:screenOrientation="fullSensor"
+            android:stateNotNeeded="true"
+            android:theme="@style/zxing_CaptureTheme"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity android:name=".ActivitySendFire" />
+        <activity android:name=".ActivitySendMessage" />
+        <activity android:name=".ActivityRegister" />
+        <activity android:name=".ActivityReadBook" />
+        <activity android:name=".ActivityWriteBook" />
+        <activity android:name=".ActivityReadEtc" />
+        <activity android:name=".ActivityWriteEtc" />
+        <activity android:name=".LoginActivity" />
+        <activity android:name=".ActivityCategory" />
+        <activity android:name=".ActivitySignUp" />
+        <activity android:name=".ActivityMyWriteInfo" />
+        <activity android:name=".ActivityMessageRoom" />
+        <activity android:name=".ActivityMain"/>
+        <!-- build.gradle에서 targetSdkVersion 24이상 설정되어있는 경우 FileuriExposedException 에러가 발생하였다. 이를 방지 -->
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="com.example.android.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths" />
+        </provider>
+        <activity android:name=".Chat1"></activity>
+    </application>
+
+</manifest>

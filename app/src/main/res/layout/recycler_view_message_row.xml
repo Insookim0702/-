@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+    <TextView
+        android:id="@+id/Tx_SendDay"
+        android:text="가장 최근 보낸 날짜시간: "
+        android:layout_width="match_parent"
+        android:layout_height="35px"
+        android:gravity="right"
+        android:textSize="30px"
+        />
+    <TextView
+        android:id="@+id/Tx_Message"
+        android:text="메시지 내용 : "
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="40px"
+        android:textColor="#393939"
+        android:textStyle="bold"/>
+    <TextView
+        android:id="@+id/Tx_Sender"
+        android:text="보낸이: "
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="30px"
+        />
+
+
+        </LinearLayout>

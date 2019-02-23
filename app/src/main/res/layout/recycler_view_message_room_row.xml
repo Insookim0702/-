@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:orientation="vertical"
+    android:paddingRight="10dp"
+    android:paddingLeft="10dp"
+
+    >
+        <TextView
+            android:id="@+id/Tx_Day"
+            android:text="날짜"
+            android:layout_width="match_parent"
+            android:layout_height="35px"
+            android:gravity="right"
+            android:textSize="30px"
+            android:layout_weight="2"
+            />
+            <TextView
+                android:id="@+id/Tx_Title"
+                android:text="제목 "
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textColor="#252424"
+                android:textSize="50px"
+                android:layout_weight="7"
+                />
+    <TextView
+        android:id="@+id/Tx_message"
+        android:text="내용"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dip"
+        android:background="#898888"/>
+
+</LinearLayout>
