@@ -3,8 +3,10 @@
 ![AppIcon](https://user-images.githubusercontent.com/42515875/53171283-ac111000-3625-11e9-9f90-8b4b7f903a85.png)
 ![splash](https://user-images.githubusercontent.com/42515875/53171290-b16e5a80-3625-11e9-8a64-e240b1571a3c.png)
 ## 주요기능.
-![appexplain](https://user-images.githubusercontent.com/42515875/53229793-838e2200-36c8-11e9-9395-5893404202d5.png)
-![appexplain1](https://user-images.githubusercontent.com/42515875/53229816-97398880-36c8-11e9-93c3-b07e0e4b61e4.png)
+![appexplain1](https://user-images.githubusercontent.com/42515875/53302125-48dde280-389e-11e9-8f90-64de90a71fd2.png)
+![appexplain2](https://user-images.githubusercontent.com/42515875/53302100-0ae0be80-389e-11e9-9ba1-e216d18e0f9a.png)
+![appexplain3](https://user-images.githubusercontent.com/42515875/53302128-5abf8580-389e-11e9-8032-0c1c3e6047c0.png)
+![appexplain4](https://user-images.githubusercontent.com/42515875/53302148-8e021480-389e-11e9-9dee-96fe4e462856.png)
 ### 1. 로그인(O)
 ### 2. 회원가입
   0. 회원가입 완료되고나서 finish()가 바로 실행되는 거 해결.
