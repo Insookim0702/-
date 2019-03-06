@@ -1,5 +1,5 @@
 ## 어플리케이션 소개
-대학생들 간에 책, 학용품, 잡화 등을 쉽게 거래하게 도와주는 어플리케이션입니다.
+대학생들 간에 책, 학용품, 잡화 등을 쉽게 거래하게 도와주는 안드로이드 모바일 플리케이션입니다.
 ![AppIcon](https://user-images.githubusercontent.com/42515875/53171283-ac111000-3625-11e9-9f90-8b4b7f903a85.png)
 ![splash](https://user-images.githubusercontent.com/42515875/53171290-b16e5a80-3625-11e9-8a64-e240b1571a3c.png)
 ## 주요기능.
