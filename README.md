@@ -4,8 +4,8 @@
 ![splash](https://user-images.githubusercontent.com/42515875/53171290-b16e5a80-3625-11e9-8a64-e240b1571a3c.png)
 ## 주요기능.
 ![appexplain1](https://user-images.githubusercontent.com/42515875/53302125-48dde280-389e-11e9-8f90-64de90a71fd2.png)
-![appexplain2](https://user-images.githubusercontent.com/42515875/53302100-0ae0be80-389e-11e9-9ba1-e216d18e0f9a.png)
-![appexplain3](https://user-images.githubusercontent.com/42515875/53302128-5abf8580-389e-11e9-8032-0c1c3e6047c0.png)
+![appexplain2](https://user-images.githubusercontent.com/42515875/53854260-19e90e80-400c-11e9-8fba-35652e4ff6cd.png)
+![appexplain3](https://user-images.githubusercontent.com/42515875/53854278-2e2d0b80-400c-11e9-88fa-268fb220dae9.png)
 ![appexplain4](https://user-images.githubusercontent.com/42515875/53302148-8e021480-389e-11e9-9dee-96fe4e462856.png)
 ### 1. 로그인(O)
 ### 2. 회원가입
